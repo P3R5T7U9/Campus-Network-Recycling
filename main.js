@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         白嫖校园网
 // @namespace    http://tampermonkey.net/
-// @version      9.9.9.9
+// @version      9.9.9.9.9
 // @description  白嫖齐大校园网
 // @author       You
 // @match        http://172.20.124.10:8081/*
@@ -97,6 +97,9 @@
 		}
 		if (length == 2 && cla == 0) {
 			str = "0" + str
+			return str
+		}
+        	if (length == 3 && cla == 0) {
 			return str
 		}
 		if (length == 13) {
